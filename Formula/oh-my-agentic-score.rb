@@ -3,10 +3,10 @@ class OhMyAgenticScore < Formula
 
   desc "Measure and visualize agentic coding performance"
   homepage "https://github.com/HwangTaehyun/oh-my-agentic-score"
-  url "https://files.pythonhosted.org/packages/3d/b0/36f3394d7dfb57f1b2134113585cc2978dd502e110ffc4c153c0acf0f146/oh_my_agentic_score-0.1.0.tar.gz"
+  url "https://files.pythonhosted.org/packages/7c/4b/b02d51f6c212477fdaeb1b18d33b2ada655a31e3e9cdab984925d1d49a6c/oh_my_agentic_score-0.2.0.tar.gz"
   license "MIT"
 
-  sha256 "74d71e8058cd543672d08d4b51d83a5859399749460fbf65502f04c03ceb76bf"
+  sha256 "06e51e41a84787632088f0bb9de10b42020d73b9b2ebe66ee512620b459b9281"
 
   depends_on "python3"
 
@@ -131,8 +131,8 @@ class OhMyAgenticScore < Formula
   end
 
   resource "textual" do
-    url "https://files.pythonhosted.org/packages/fb/e4/0f6b6c22a30d2dc2850b4d09c8684742cc4ab79501d4588ea05269c1de3f/textual-8.0.1.tar.gz"
-    sha256 "fe6544e57651a7c2a8249b90ec542b45fa945ce4560e69b0d563fb440e7c4db3"
+    url "https://files.pythonhosted.org/packages/be/08/c6bcb1e3c4c9528ec9049f4ac685afdafc72866664270f0deb416ccbba2a/textual-8.0.2.tar.gz"
+    sha256 "7b342f3ee9a5f2f1bd42d7b598cae00ff1275da68536769510db4b7fe8cabf5d"
   end
 
   resource "trogon" do
