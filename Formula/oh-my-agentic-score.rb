@@ -3,10 +3,10 @@ class OhMyAgenticScore < Formula
 
   desc "Measure and visualize agentic coding performance"
   homepage "https://github.com/HwangTaehyun/oh-my-agentic-score"
-  url "https://files.pythonhosted.org/packages/c8/e2/82c5506469d6c2c3250b9aadad5a3c4722e865fccd3c9c8e3a505c1d876b/oh_my_agentic_score-0.7.10.tar.gz"
+  url "https://files.pythonhosted.org/packages/75/1c/ae4a913cdd94dcec2800e23758054261be65be55c3c38202678afc3a1f95/oh_my_agentic_score-0.7.11.tar.gz"
   license "MIT"
 
-  sha256 "69315d139e707d8c6d7a6a6ba58335259bbd56d3f00d030d80f4838f19fccffa"
+  sha256 "b335605c7e82f36c7b08ece0530bf116916ad762bca6f08e12f8c374c310c543"
 
   depends_on "python3"
 
@@ -86,8 +86,8 @@ class OhMyAgenticScore < Formula
   end
 
   resource "platformdirs" do
-    url "https://files.pythonhosted.org/packages/1b/04/fea538adf7dbbd6d186f551d595961e564a3b6715bdf276b477460858672/platformdirs-4.9.2.tar.gz"
-    sha256 "9a33809944b9db043ad67ca0db94b14bf452cc6aeaac46a88ea55b26e2e9d291"
+    url "https://files.pythonhosted.org/packages/19/56/8d4c30c8a1d07013911a8fdbd8f89440ef9f08d07a1b50ab8ca8be5a20f9/platformdirs-4.9.4.tar.gz"
+    sha256 "1ec356301b7dc906d83f371c8f487070e99d3ccf9e501686456394622a01a934"
   end
 
   resource "pydantic" do
