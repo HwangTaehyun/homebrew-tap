@@ -4,9 +4,8 @@ class OhMyAgenticScore < Formula
   desc "Measure and visualize agentic coding performance"
   homepage "https://github.com/HwangTaehyun/oh-my-agentic-score"
   url "https://files.pythonhosted.org/packages/29/53/5afff3a3da1c73cb964504e6f6684af19dc0a63342a47a519968c83d9839/oh_my_agentic_score-0.7.0.tar.gz"
-  license "MIT"
-
   sha256 "574121942db41d8a8b48709f356cfad3b5c0b31b64db875d10060fed877d3ee3"
+  license "MIT"
 
   depends_on "python3"
 
@@ -95,11 +94,6 @@ class OhMyAgenticScore < Formula
     sha256 "4d351024c75c0f085a9febbb665ce8c0c6ec5d30e903bdb6394b7ede26aebb49"
   end
 
-  resource "pydantic_core" do
-    url "https://files.pythonhosted.org/packages/71/70/23b021c950c2addd24ec408e9ab05d59b035b39d97cdc1130e1bce647bb6/pydantic_core-2.41.5.tar.gz"
-    sha256 "08daa51ea16ad373ffd5e7606252cc32f07bc72b28284b6bc9c6df804816476e"
-  end
-
   resource "Pygments" do
     url "https://files.pythonhosted.org/packages/b0/77/a5b8c569bf593b0140bde72ea885a803b82086995367bf2037de0159d924/pygments-2.19.2.tar.gz"
     sha256 "636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887"
@@ -162,6 +156,9 @@ class OhMyAgenticScore < Formula
 
   def install
     virtualenv_create(libexec, "python3")
+    # pydantic_core requires Rust/maturin to build from source,
+    # so install it as a wheel from PyPI before the rest
+    system libexec/"bin/pip", "install", "--no-deps", "pydantic_core==2.41.5"
     virtualenv_install_with_resources
   end
 
