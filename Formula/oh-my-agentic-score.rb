@@ -158,8 +158,9 @@ class OhMyAgenticScore < Formula
 
   def install
     virtualenv_create(libexec, "python3")
-    system libexec/"bin/pip", "install", "--no-cache-dir", "pydantic_core"
     virtualenv_install_with_resources
+    # Install pydantic_core as pre-built wheel (Rust-based, can't build from source)
+    system libexec/"bin/pip", "install", "--no-cache-dir", "pydantic_core"
   end
 
   test do
