@@ -9,6 +9,7 @@ class OhMyAgenticScore < Formula
   sha256 "b335605c7e82f36c7b08ece0530bf116916ad762bca6f08e12f8c374c310c543"
 
   depends_on "python3"
+  depends_on "rust" => :build
 
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
@@ -159,8 +160,6 @@ class OhMyAgenticScore < Formula
   def install
     virtualenv_create(libexec, "python3")
     virtualenv_install_with_resources
-    # Install pydantic_core as pre-built wheel (Rust-based, can't build from source)
-    system libexec/"bin/pip", "install", "--no-cache-dir", "pydantic_core"
   end
 
   test do
