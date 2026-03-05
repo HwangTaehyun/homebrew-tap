@@ -3,10 +3,10 @@ class OhMyAgenticScore < Formula
 
   desc "Measure and visualize agentic coding performance"
   homepage "https://github.com/HwangTaehyun/oh-my-agentic-score"
-  url "https://files.pythonhosted.org/packages/21/f2/39f650677a82c7fd94524679c8fe1fa1cca686a7fde9248fcd552787bd2e/oh_my_agentic_score-0.4.1.tar.gz"
+  url "https://files.pythonhosted.org/packages/e2/76/344ce745c45871ef6b5a5e77368aed1b98587093536aa04590a22425fa78/oh_my_agentic_score-0.4.3.tar.gz"
   license "MIT"
 
-  sha256 "ff40ac5d28e54f594de6e7cf3c11cc044726d71567c9311adadf8812515effce"
+  sha256 "981018bff6a38cdc16a1c27cf5a15b86a8c32b3956c60c297a4c64fb9dcec6c0"
 
   depends_on "python3"
 
