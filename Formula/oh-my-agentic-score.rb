@@ -3,10 +3,10 @@ class OhMyAgenticScore < Formula
 
   desc "Measure and visualize agentic coding performance"
   homepage "https://github.com/HwangTaehyun/oh-my-agentic-score"
-  url "https://files.pythonhosted.org/packages/0a/91/9c12d3a9893dbdabeef1c2ed22f1da18a642f9544aa7871c9f00bbd05bb1/oh_my_agentic_score-0.8.1.tar.gz"
+  url "https://files.pythonhosted.org/packages/58/52/bfb1737212682818883f4a8d04ef06093bc6e63b29b3098ef00ba3e70c0a/oh_my_agentic_score-0.8.2.tar.gz"
   license "MIT"
 
-  sha256 "c7bfe7aff7535fe22d35adf99d78aa276db258cfb5fa7f6d5dd65988c77ceaea"
+  sha256 "9ec89bc77b14bb8a89da36327dd789f2b4443af95827e210827d878fe638cfec"
 
   depends_on "python3"
 
@@ -21,8 +21,8 @@ class OhMyAgenticScore < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/13/69/33ddede1939fdd074bce5434295f38fae7136463422fe4fd3e0e89b98062/charset_normalizer-3.4.4.tar.gz"
-    sha256 "94537985111c35f28720e43603b8e7b43a6ecfb2ce1d3058bbe955b73404e21a"
+    url "https://files.pythonhosted.org/packages/1d/35/02daf95b9cd686320bb622eb148792655c9412dbb9b67abb5694e5910a24/charset_normalizer-3.4.5.tar.gz"
+    sha256 "95adae7b6c42a6c5b5b559b1a99149f090a57128155daeea91732c8d970d8644"
   end
 
   resource "click" do
