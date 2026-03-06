@@ -3,13 +3,12 @@ class OhMyAgenticScore < Formula
 
   desc "Measure and visualize agentic coding performance"
   homepage "https://github.com/HwangTaehyun/oh-my-agentic-score"
-  url "https://files.pythonhosted.org/packages/75/1c/ae4a913cdd94dcec2800e23758054261be65be55c3c38202678afc3a1f95/oh_my_agentic_score-0.7.11.tar.gz"
+  url "https://files.pythonhosted.org/packages/df/85/098d5ddbced69b4d9e0c1be323752598d6278954043905626d3327cc554c/oh_my_agentic_score-0.8.0.tar.gz"
   license "MIT"
 
-  sha256 "b335605c7e82f36c7b08ece0530bf116916ad762bca6f08e12f8c374c310c543"
+  sha256 "ae6bd329f06c8cb81b308677f13854cab35cd1c5f97b071f90ce21ca07a4873e"
 
   depends_on "python3"
-  depends_on "rust" => :build
 
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
@@ -100,8 +99,6 @@ class OhMyAgenticScore < Formula
     url "https://files.pythonhosted.org/packages/71/70/23b021c950c2addd24ec408e9ab05d59b035b39d97cdc1130e1bce647bb6/pydantic_core-2.41.5.tar.gz"
     sha256 "08daa51ea16ad373ffd5e7606252cc32f07bc72b28284b6bc9c6df804816476e"
   end
-
-
 
   resource "Pygments" do
     url "https://files.pythonhosted.org/packages/b0/77/a5b8c569bf593b0140bde72ea885a803b82086995367bf2037de0159d924/pygments-2.19.2.tar.gz"
